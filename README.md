@@ -1,3 +1,3 @@
 # Deep_Learning
 
-this repo shows files and assignments from coursera
+This is Deep Learning specialization Course from Coursera
