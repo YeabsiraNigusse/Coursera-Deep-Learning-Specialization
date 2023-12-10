@@ -239,11 +239,11 @@ def compute_cost(a3, Y):
     return cost
 
 def load_dataset():
-    train_dataset = h5py.File('datasets/train_catvnoncat.h5', "r")
+    train_dataset = h5py.File('train_catvnoncat.h5', "r")
     train_set_x_orig = np.array(train_dataset["train_set_x"][:]) # your train set features
     train_set_y_orig = np.array(train_dataset["train_set_y"][:]) # your train set labels
 
-    test_dataset = h5py.File('datasets/test_catvnoncat.h5', "r")
+    test_dataset = h5py.File('test_catvnoncat.h5', "r")
     test_set_x_orig = np.array(test_dataset["test_set_x"][:]) # your test set features
     test_set_y_orig = np.array(test_dataset["test_set_y"][:]) # your test set labels
 
@@ -325,7 +325,7 @@ def plot_decision_boundary(model, X, y):
     plt.show()
     
 def load_2D_dataset():
-    data = scipy.io.loadmat('datasets/data.mat')
+    data = scipy.io.loadmat('data.mat')
     train_X = data['X'].T
     train_Y = data['y'].T
     test_X = data['Xval'].T
